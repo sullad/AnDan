@@ -80,10 +80,7 @@ const Header = () => {
                                 </li>
                                 <li>
                                     <Link to="/sub-menu-4">PHỤ LỤC 4</Link>
-                                </li>
-                                <li>
-                                    <Link to="/sub-menu-5">PHỤ LỤC 5</Link>
-                                </li>
+                                </li>                                
                             </ul>
                         </div>
                         <div className="item-header">
