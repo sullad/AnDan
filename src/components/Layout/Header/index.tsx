@@ -112,11 +112,9 @@ const Header = () => {
                                 <button className="login" onClick={handleLoginClickOpen}>
                                     ĐĂNG NHẬP
                                 </button>
-                                <button className="signup" onClick={handleRegisterClickOpen}>
-                                    ĐĂNG KÝ
-                                </button>
                             </div>
                         </div>
+                        
                     </div>
                 </div>
                 {/* <div className="hide-header">
