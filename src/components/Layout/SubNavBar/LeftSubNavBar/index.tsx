@@ -3,6 +3,15 @@ import React from 'react'
 import '../style.scss'
 import { Article, Folder, Note, Square } from '@mui/icons-material'
 
+const mon = ["Ngữ văn","Toán","Lý"];
+const khoi = ["lớp 6","lớp 7","lớp 8","lớp 9","lớp 10","lớp 11","lớp 12"];
+const baigiang =["bai giang 1", "bai giang 2"];
+
+function convertToFolder()=>{
+
+}
+
+
 const LeftSubNavBar = () => {
     const folders = [
         {
@@ -40,31 +49,32 @@ const LeftSubNavBar = () => {
                     <div className="sub-nav-bar-item-content">
                         <div className="sub-nav-bar-item-content-folder">
                             {
-                                folders.map((folder, index) => (
-                                    <>
-                                        <div key={index} className='sub-nav-bar-item-content-folder-name'>
-                                            <Folder style={{ width: "30", height: "30", color: "orange" }} />
-                                            <div>{folder.name}</div>
-                                        </div>
-                                        {
-                                            folder.grades.map((grade, index) => (
-                                                <>
-                                                    <div className='sub-nav-bar-item-content-folder-grade' key={index}>
-                                                        <Note style={{ width: "30", height: "30", color: "#008DDA" }} />
-                                                        <div>{grade.grade}</div>
-                                                    </div>
-                                                    {
-                                                        grade.courses.map((course, index) => (
-                                                            <div className='sub-nav-bar-item-content-folder-course'>
-                                                                <Article style={{ width: "30", height: "30", color: "#EFB38E" }} />
-                                                                {course}
-                                                            </div>
-                                                        ))
-                                                    }
-                                                </>
-                                            ))
-                                        }</>
-                                ))
+                                
+                                // folders.map((folder, index) => (
+                                //     <>
+                                //         <div key={index} className='sub-nav-bar-item-content-folder-name'>
+                                //             <Folder style={{ width: "30", height: "30", color: "orange" }} />
+                                //             <div>{folder.name}</div>
+                                //         </div>
+                                //         {
+                                //             folder.grades.map((grade, index) => (
+                                //                 <>
+                                //                     <div className='sub-nav-bar-item-content-folder-grade' key={index}>
+                                //                         <Note style={{ width: "30", height: "30", color: "#008DDA" }} />
+                                //                         <div>{grade.grade}</div>
+                                //                     </div>
+                                //                     {
+                                //                         grade.courses.map((course, index) => (
+                                //                             <div className='sub-nav-bar-item-content-folder-course'>
+                                //                                 <Article style={{ width: "30", height: "30", color: "#EFB38E" }} />
+                                //                                 {course}
+                                //                             </div>
+                                //                         ))
+                                //                     }
+                                //                 </>
+                                //             ))
+                                //         }</>
+                                // ))
                             }
                         </div>
                     </div>
